@@ -1,9 +1,5 @@
 // App.tsx (Frontend React Component)
-
-import { useState } from 'react';
-
 const App = () => {
-  const [cookie, setCookie] = useState<string | null>(null);
 
   const handleSetCookie = () => {
     // Send a GET request to set the cookie
@@ -22,7 +18,6 @@ const App = () => {
     <div>
       <h1>Frontend</h1>
       <button onClick={handleSetCookie}>Set Cookie</button>
-      <p>Cookie: {cookie}</p>
     </div>
   );
 };
